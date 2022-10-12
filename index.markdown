@@ -23,12 +23,13 @@ var _POPUP_FEATURES = 'width=500,height=300,resizable=1,scrollbars=1,titlebar=1,
 <link media="all" href="./css/glab.css" type="text/css" rel="StyleSheet">
 <style type="text/css" media="all">
 body {
-    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight:300;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: 300;
     font-size:18px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    color: #333332;
   }
   
   h1 {
@@ -104,17 +105,23 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
 <body data-gr-c-s-loaded="true">
 
 <div id="primarycontent">
-<center><h1><strong>Ditto <img width="50" style='display:inline;' src="./src/ditto.png"/> <br>Building Digital Twins of Articulated Objects from Interaction</strong></h1></center>
+<center>
+<h1><strong>
+<!-- Ditto <img width="50" style='display:inline;' src="./src/ditto.png"/> <br> -->
+Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During Deployment
+</strong></h1></center>
 <center><h2>
-    <a href="https://zhenyujiang.me/">Zhenyu Jiang</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://chengchunhsu.github.io/">Cheng-Chun Hsu</a>&nbsp;&nbsp;&nbsp; 
+    <a href="https://huihanl.github.io/">Huihan Liu</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://snasiriany.me/">Soroush Nasiriany</a>&nbsp;&nbsp;&nbsp; 
+    Lance Zhang&nbsp;&nbsp;&nbsp;
+    Zhiyao Bao&nbsp;&nbsp;&nbsp;
     <a href="https://cs.utexas.edu/~yukez">Yuke Zhu</a>&nbsp;&nbsp;&nbsp;
    </h2>
     <center><h2>
         <a href="https://www.cs.utexas.edu/">The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp; 		
     </h2></center>
-<center><h2>
-        CVPR 2022 Oral Presentation&nbsp;&nbsp;&nbsp; 		
+    <center><h2>
+        in submission to ICRA 2023 &nbsp;&nbsp;&nbsp; 		
     </h2></center>
 	<center><h2><a href="https://arxiv.org/abs/2202.08227">Paper</a> | <a href="https://github.com/UT-Austin-RPL/Ditto">Code</a> </h2></center>
 
@@ -125,7 +132,7 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
                 <tr>
                     <td>
 <p align="justify" width="20%">
- Digitizing physical objects into the virtual world has the potential to unlock new research and applications in embodied AI and mixed reality. This work focuses on recreating interactive digital twins of real-world articulated objects, which can be directly imported into virtual environments. We introduce Ditto to learn articulation model estimation and 3D geometry reconstruction of an articulated object through interactive perception. Given a pair of visual observations of an articulated object before and after interaction, Ditto reconstructs part-level geometry and estimates the articulation model of the object. We employ implicit neural representations for joint geometry and articulation modeling. Our experiments show that Ditto effectively builds digital twins of articulated objects in a category-agnostic way. We also apply Ditto to real-world objects and deploy the recreated digital twins in physical simulation.
+ With the rapid growth of computing powers and recent advances in deep learning, we have witnessed impressive demonstrations of novel robot capabilities in research settings. Nonetheless, these learning systems exhibit brittle generalization and require excessive training data for practical tasks. To harness the capabilities of state-of-the-art robot learning models, while embracing their imperfections, we develop a principled framework for humans and robots to collaborate through a division of work. In this framework, partially autonomous robots are tasked with handling a major portion of decision-making where they work reliably; meanwhile, human operators monitor the process and intervene in challenging situations. Such a human-robot team ensures safe deployments in complex tasks. Further, we introduce a new learning algorithm to improve the policy's performance on the data collected from the task executions. The core idea is re-weighing training samples with approximated human trust and optimizing the policies with weighted behavioral cloning. We evaluate our framework in simulation and on real hardware, showing that our method consistently outperforms baselines over a collection of contact-rich manipulation tasks, achieving 8% boost in simulation and 27% on real hardware than the state-of-the-art methods, with 3 times faster convergence and 15% memory size.
 </p></td></tr></table>
 </p>
   </div>
@@ -133,7 +140,7 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
 
 <hr>
 
-<h1 align="center">Problem Definition</h1>
+<h1 align="center">Learning on the Job Overview</h1>
 
 <!-- <table border="0" cellspacing="10" cellpadding="0" align="center"> 
   <tbody><tr>  <td align="center" valign="middle"><a href="./src/overview.png"> <img src="./src/overview.png" style="width:100%;">  </a></td>
@@ -162,7 +169,7 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
 </p></td></tr></table>
 
   
-<br><br><hr> <h1 align="center">Ditto Architecture</h1> <!-- <h2
+<br><br><hr> <h1 align="center">Intervention-</h1> <!-- <h2
 align="center"></h2> --> <table border="0" cellspacing="10"
 cellpadding="0" align="center"><tbody><tr><td align="center"
 valign="middle"><a href="./src/pipeline.png"> <img
@@ -175,7 +182,7 @@ src="./src/pipeline.png" style="width:100%;"> </a></td>
 <hr>
 
 
-<h1 align="center">Reconstruction Results</h1>
+<h1 align="center">Qualitative Results</h1>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
