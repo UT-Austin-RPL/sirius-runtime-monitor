@@ -6,7 +6,7 @@ categories: projects
 
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Ditto</title>
+<title>Robot Learning on the Job</title>
 
 
 <!-- <meta property="og:image" content="images/teaser_fb.jpg"> -->
@@ -23,7 +23,7 @@ var _POPUP_FEATURES = 'width=500,height=300,resizable=1,scrollbars=1,titlebar=1,
 <link media="all" href="./css/glab.css" type="text/css" rel="StyleSheet">
 <style type="text/css" media="all">
 body {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-family: "Merriweather","PT Serif",Georgia,"Times New Roman",serif;
     font-weight: 300;
     font-size:18px;
     margin-left: auto;
@@ -37,6 +37,10 @@ body {
   }
   h2 {
     font-weight:300;
+  }
+  h3 {
+    font-weight:250;
+    font-size: 25px;
   }
   
 IMG {
@@ -55,6 +59,7 @@ IMG {
 BODY {
   TEXT-ALIGN: center
 }
+
 hr
   {
     border: 0;
@@ -111,11 +116,11 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
 Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During Deployment
 </strong></h1></center>
 <center><h2>
-    <a href="https://huihanl.github.io/">Huihan Liu</a>&nbsp;&nbsp;&nbsp;
-    <a href="http://snasiriany.me/">Soroush Nasiriany</a>&nbsp;&nbsp;&nbsp; 
-    Lance Zhang&nbsp;&nbsp;&nbsp;
-    Zhiyao Bao&nbsp;&nbsp;&nbsp;
-    <a href="https://cs.utexas.edu/~yukez">Yuke Zhu</a>&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;<a href="https://huihanl.github.io/">Huihan Liu</a>&nbsp;&nbsp;
+    <a href="http://snasiriany.me/">Soroush Nasiriany</a>&nbsp;&nbsp; 
+    Lance Zhang&nbsp;&nbsp;
+    Zhiyao Bao&nbsp;&nbsp;
+    <a href="https://cs.utexas.edu/~yukez">Yuke Zhu</a>&nbsp;&nbsp;
    </h2>
     <center><h2>
         <a href="https://www.cs.utexas.edu/">The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp; 		
@@ -142,59 +147,67 @@ Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During De
 
 <h1 align="center">Learning on the Job Overview</h1>
 
-<!-- <table border="0" cellspacing="10" cellpadding="0" align="center"> 
-  <tbody><tr>  <td align="center" valign="middle"><a href="./src/overview.png"> <img src="./src/overview.png" style="width:100%;">  </a></td>
-  </tr>
-
-</tbody>
-</table> -->
-
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody>
   <tr>
     <td align="center" valign="middle">
-      <video muted autoplay width="100%">
-        <source src="./video/overview.mov"  type="video/mp4">
+      <video muted autoplay loop width="100%">
+        <source src="./video/1_overview.mp4"  type="video/mp4">
       </video>
     </td>
   </tr>
   </tbody>
 </table>
 
-  <table align=center width=800px>
-                <tr>
-                    <td>
-  <p align="justify" width="20%">
-  A digital twin is a virtual representation that serves as the real-time digital counterpart of a physical object or process<sup><a href="https://en.wikipedia.org/wiki/Digital_twin">[1]</a></sup>. Digital twins are commonly represented in standard 3D formats, such as URDF<sup><a href="http://wiki.ros.org/urdf">[2]</a></sup>, such that they can be imported into physics engines. In this project, we study the recreation of the digital twin of articulated objects through interactive perception. Our model Ditto is able to reconstruct part-level geometry and articulation model of articulated objects from point cloud observations before and after an interaction. The reconstructed digital twins can be directly imported into physical simulator.
-</p></td></tr></table>
+<hr>
 
-  
-<br><br><hr> <h1 align="center">Intervention-</h1> <!-- <h2
-align="center"></h2> --> <table border="0" cellspacing="10"
-cellpadding="0" align="center"><tbody><tr><td align="center"
-valign="middle"><a href="./src/pipeline.png"> <img
-src="./src/pipeline.png" style="width:100%;"> </a></td>
-</tr> </tbody> </table>
+<h1 align="center">Continuous Deployment and Update Cycle</h1>
 
-<table width=800px><tr><td> <p align="justify" width="20%">The inputs are point cloud observations before and after interaction. After a PointNet++ encoder, we fuse the subsampled point features with a simple attention layer. Then we use two independent decoders to propagate the fused point features into two sets of dense point features, for geometry reconstruction and articulation estimation separately. We construct feature grid/planes by projecting and pooling the point features, and query local features from the constructed feature grid/planes. Conditioning on local features, we use different decoders to predict occupancy, segmentation and joint parameters with respect to the query points.  </p></td></tr></table>
-<br>
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody>
+  <tr>
+    <td align="center" valign="middle">
+      <video muted autoplay loop width="100%">
+        <source src="./video/2_cicd.mp4"  type="video/mp4">
+      </video>
+    </td>
+  </tr>
+  </tbody>
+</table>
 
 <hr>
 
+<h1 align="center">Method: Intervention-based Reweighting Scheme</h1>
 
-<h1 align="center">Qualitative Results</h1>
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody>
+  <tr>
+    <td align="center" valign="middle">
+      <video muted autoplay loop width="100%" frameborder="5">
+        <source src="./video/3_model.mp4"  type="video/mp4">
+      </video>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h1 align="center">Experiment Results</h1>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
-  <p align="justify" width="20%">We show qualitative results on the Shape2Motion dataset. Ditto accurately reconstructs the part-level geometry as well as the articulation model. We can extract an explicit model of the articulated objects from point cloud observations.</p>
-</td></tr>
+  <p align="justify" width="20%">Our system ensures safe and reliable execution through human-robot teaming. We evaluated the autonomous policy performance of our human-in-the-loop framework on 4 tasks. As the autonomous policy improves over long-term deployment, the amount of human workload decreases.
+</p>
+</td>
+</tr>
 </tbody>
 </table>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr>  <td align="center" valign="middle">
-  <video muted autoplay loop width="100%">
-      <source src="./video/sim.mp4"  type="video/mp4">
+  <video muted autoplay width="100%">
+      <source src="./video/5_tasks.mp4"  type="video/mp4">
   </video>
   </td>
   </tr>
@@ -202,59 +215,125 @@ src="./src/pipeline.png" style="width:100%;"> </a></td>
 </tbody>
 </table>
 
-
-<br><hr>
-<h1 align="center">Real World Experiment</h1>
-<table border="0" cellspacing="10"
-cellpadding="0"><tr><td>
-<p> We tested Ditto on real world objects. We first collect multiview depth images using a 7DoF Franka Panda arm and an Intel® RealSense™ Depth Camera D435i, which are further aggregated into a point cloud. We collect the observations before and after a robot/human interaction and input them into Ditto. Ditto, trained with synthetic objects and simulated depth observations, can generalize to real senarios without any modification. </p></td></tr></table>
-
 <table border="0" cellspacing="10" cellpadding="0" align="center">
-  <tbody>
-  <tr>
-    <td align="center" valign="middle">
-      <video muted autoplay width="94%">
-        <source src="./video/real.mp4"  type="video/mp4">
-      </video>
-    </td>
-  </tr>
-  </tbody>
+  <tbody><tr><td>
+  <p align="justify" width="20%">We conduct 3 rounds of robot deployments and policy updates. Here we present Round 1 and Round 3 results of Ours and baseline IWR. We show how for Ours policy performance improve over rounds, and how Ours outperforms IWR baseline. </p>
+</td>
+</tr>
+</tbody>
 </table>
 
-<table border="0" cellspacing="10" cellpadding="0" align="center"> 
-  <tbody><tr>  <td align="center" valign="middle"><a href="./src/real.png"> <img src="./src/real.png" style="width:100%;">  </a></td>
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted autoplay loop width="100%">
+      <source src="./video/6_timeline.mp4"  type="video/mp4">
+  </video>
+  </td>
   </tr>
 
 </tbody>
 </table>
 
+<h2 align="center">Gear Insertion (Real)</h2>
 
-<br><hr>
-<h1 align="center">From Real World to Simulation and Back</h1>
-<table border="0" cellspacing="10"
-cellpadding="0"><tr><td>
-<p> We demonstrate one application of Ditto, where we recreate the digital twin of a faucet, directly spawn the digital twin in a physical simulation environment (robosuite), manipulate the faucet with the robot arm in simulation and transfer the manipulation action to the real world. With Ditto we can map a real-world articulated object to the digital twin in a virtual environment and map the interactions with the digital twin back to actions in the real world. </p></td></tr></table>
-  
+<h3 align="center">Ours, Round 1</h3>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
-  <tbody>
-  <tr>
-    <td align="center" valign="middle">
-      <video muted autoplay width="100%">
-        <source src="./video/real2sim.mp4"  type="video/mp4">
-      </video>
-    </td>
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted   width="100%">
+      <source src="./video/g1.mp4"  type="video/mp4">
+  </video>
+  </td>
   </tr>
   </tbody>
 </table>
 
-<br>
 
+<h3 align="center">IWR, Round 1</h3>
 
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted   width="100%">
+      <source src="./video/g2.mp4"  type="video/mp4">
+  </video>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
-<hr>
-<!-- <table align=center width=800px> <tr> <td> <left> -->
-<center><h1>Citation</h1></center>
+<h3 align="center">Ours, Round 3</h3>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted   width="100%">
+      <source src="./video/g3.mp4"  type="video/mp4">
+  </video>
+  </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3 align="center">IWR, Round 3</h3>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted   width="100%">
+      <source src="./video/g4.mp4"  type="video/mp4">
+  </video>
+  </td>
+  </tr>
+  </tbody>
+</table>
+
+<h2 align="center">Coffee Pod packing (Real)</h2>
+
+<h3 align="center">Ours, Round 1</h3>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted   width="100%">
+      <source src="./video/g5.mp4"  type="video/mp4">
+  </video>
+  </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3 align="center">IWR, Round 1</h3>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted   width="100%">
+      <source src="./video/g6.mp4"  type="video/mp4">
+  </video>
+  </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3 align="center">Ours, Round 3</h3>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted   width="100%">
+      <source src="./video/g7.mp4"  type="video/mp4">
+  </video>
+  </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3 align="center">IWR, Round 3</h3>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted   width="100%">
+      <source src="./video/g8.mp4"  type="video/mp4">
+  </video>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 <table align=center width=800px>
               <tr>
@@ -288,4 +367,3 @@ cellpadding="0"><tr><td>
   gtag('config', 'G-PPXN40YS69');
 </script>
 <!-- </center></div></body></div> -->
-
