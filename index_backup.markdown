@@ -6,7 +6,7 @@ categories: projects
 
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Robot Learning on the Job</title>
+<title>HITL Website Draft</title>
 
 
 <!-- <meta property="og:image" content="images/teaser_fb.jpg"> -->
@@ -272,6 +272,7 @@ After applying memory management strategies, the dataset is smaller, and importa
 </tbody>
 </table>
 
+<br>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody>
