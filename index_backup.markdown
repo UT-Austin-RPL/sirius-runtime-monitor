@@ -278,7 +278,7 @@ After applying memory management strategies, the dataset is smaller, and importa
   <tr>
     <td align="center" valign="middle">
       <video muted autoplay controls loop width="100%" frameborder="5">
-        <source src="./video/memory_new.mp4"  type="video/mp4">
+        <source src="./video/memory.mp4"  type="video/mp4">
       </video>
     </td>
   </tr>
