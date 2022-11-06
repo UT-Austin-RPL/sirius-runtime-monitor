@@ -126,8 +126,8 @@ Robot Learning on the Job: <br> Human-in-the-Loop Manipulation and Learning Duri
 <center><h2>
     &nbsp;&nbsp;&nbsp;<a href="https://huihanl.github.io/">Huihan Liu</a>&nbsp;&nbsp;
     <a href="http://snasiriany.me/">Soroush Nasiriany</a>&nbsp;&nbsp; 
-    Lance Zhang&nbsp;&nbsp;
-    Zhiyao Bao&nbsp;&nbsp;
+    <a href="">Lance Zhang</a>&nbsp;&nbsp;
+    <a href="">Zhiyao Bao</a>&nbsp;&nbsp;
     <a href="https://cs.utexas.edu/~yukez">Yuke Zhu</a>&nbsp;&nbsp;
    </h2>
     <center><h2>
