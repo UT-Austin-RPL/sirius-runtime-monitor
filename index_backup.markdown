@@ -121,8 +121,7 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
 <div id="primarycontent">
 <center>
 <h1><strong>
-<!-- Ditto <img width="50" style='display:inline;' src="./src/ditto.png"/> <br> -->
-Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During Deployment
+Robot Learning on the Job: <br> Human-in-the-Loop Manipulation and Learning During Deployment
 </strong></h1></center>
 <center><h2>
     &nbsp;&nbsp;&nbsp;<a href="https://huihanl.github.io/">Huihan Liu</a>&nbsp;&nbsp;
@@ -134,10 +133,7 @@ Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During De
     <center><h2>
         <a href="https://www.cs.utexas.edu/">The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp; 		
     </h2></center>
-    <center><h2>
-        in submission to <a href="https://www.icra2023.org/">ICRA 2023</a>&nbsp;&nbsp;&nbsp; 		
-    </h2></center>
-
+    
 	<center><h2><a href=""><span class="icon">
                       <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
                   </span> Paper</a> | 
@@ -163,10 +159,26 @@ Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During De
 </p>
   </div>
 </p>
-
+<br>
 <hr>
 
-<h1 align="center">Learning on the Job Overview</h1>
+<h1 align="center">Overview</h1>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+
+Our framework enables a human and a robot to collaborate on manipulation tasks through shared control. 
+The human monitors the robot’s autonomous execution and intervenes to provide corrections through teleoperation. 
+Data from deployments will be used by our algorithm to improve the robot’s policy in consecutive rounds of policy learning.
+
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody>
@@ -185,6 +197,17 @@ Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During De
 <h1 align="center">Continuous Deployment and Update Cycle</h1>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+Robot deployment and policy update co-occurs in the system: 
+deployment data are passed to policy training, while a newly trained policy is deployed to the target environment for task execution.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody>
   <tr>
     <td align="center" valign="middle">
@@ -198,14 +221,64 @@ Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During De
 
 <hr>
 
-<h1 align="center">Method: Intervention-based Reweighting Scheme</h1>
+<h1 align="center">Method</h1>
+
+<h2><strong>Intervention-based Reweighting Scheme</strong></h2>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+Human interventions signify task structure and human trust. We use human interventions to re-weight training samples in a supervised learning setting.
+Based off weighted behavior cloning, our method explicitly leverages the human-intervention signals in the dataset to construct our weighting scheme.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody>
   <tr>
     <td align="center" valign="middle">
-      <video muted autoplay controls width="110%" frameborder="5">
-        <source src="./video/3model.mp4"  type="video/mp4">
+      <video muted autoplay controls loop width="100%" frameborder="5">
+        <source src="./video/model_new.mp4"  type="video/mp4">
+      </video>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<br>
+
+
+<h2><strong>Memory Management</strong></h2>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+Growing deployment data size imposes memory burden over time. It also slows down learning convergence and dilutes important, useful samples. 
+
+We reorganize memory to reject samples and prioritize important ones. We consider different memory management strategies: FIFO, FILO, LFI, MFI, Uniform. 
+
+After applying memory management strategies, the dataset is smaller, and important, useful samples are prioritized.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody>
+  <tr>
+    <td align="center" valign="middle">
+      <video muted autoplay controls loop width="100%" frameborder="5">
+        <source src="./video/memory_new.mp4"  type="video/mp4">
       </video>
     </td>
   </tr>
@@ -214,11 +287,34 @@ Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During De
 
 <hr>
 
-<h1 align="center">Experiment Results</h1>
+<h1 align="center">Experiments and Quantitative Results</h1>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
-  <p align="justify" width="20%">Our system ensures safe and reliable execution through human-robot teaming. We evaluated the autonomous policy performance of our human-in-the-loop framework on 4 tasks. As the autonomous policy improves over long-term deployment, the amount of human workload decreases.
+  <p align="justify" width="20%">Our system ensures safe and reliable execution through human-robot teaming. We evaluated the autonomous policy performance of our human-in-the-loop framework on 4 tasks: </p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted loop autoplay width="100%">
+      <source src="./video/task_new.mp4"  type="video/mp4">
+  </video>
+  </td>
+  </tr>
+</tbody>
+</table>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+We evaluated the autonomous policy performance of our human-in-the-loop framework on 4 tasks.
+Ours autonomous policy outperforms baselines consistently over three rounds of deployments and policy updates across four tasks.
+As the autonomous policy improves over long-term deployment, the amount of human workload decreases.
 </p>
 </td>
 </tr>
@@ -227,38 +323,98 @@ Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During De
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr>  <td align="center" valign="middle">
-  <video muted autoplay width="100%">
-      <source src="./video/5_tasks.mp4"  type="video/mp4">
-  </video>
+    <img src="./src/results_plot_tasks.png" style="width:100%;">
   </td>
   </tr>
 
 </tbody>
 </table>
 
+<br>
+<hr>
+
+<h1 align="center">Policy Update over Deployment Time</h1>
+
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
-  <p align="justify" width="20%">We conduct 3 rounds of robot deployments and policy updates. Here we present Round 1 and Round 3 results of Ours and baseline IWR. We show how for Ours policy performance improve over rounds, and how Ours outperforms IWR baseline. </p>
+  <p align="justify" width="20%">We showcase qualitatively the human-in-the-loop deployment performances in initial and later stages of the deployment. The dynamics of human-robot partnership changes as deployment continues, with considerable less human workload. <br> <br> 
+
+For the initial and final deployment stages (Round 0 and Round 3), we show a no-cut video of 10 consecutive task executions to give a truthful qualitative demonstration of the policy performance and human-robot partnership. Human intervenes when the robot fails to make task progress. Green video filter indicates the duration when human intervenes. </p>
 </td>
 </tr>
 </tbody>
 </table>
 
+<h2 align="center">No-cut video of gear insertion deployment, round 0 (10 trials)</h2>
+
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr>  <td align="center" valign="middle">
-  <video muted autoplay loop width="100%">
-      <source src="./video/6_timeline.mp4"  type="video/mp4">
-  </video>
+  <iframe width="780" height="437.84" 
+     src="https://www.youtube.com/embed/MhXEG5XS5Wk?autoplay=1&mute=1&loop=1" 
+     autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </td>
   </tr>
 
 </tbody>
 </table>
+
+
+<h2 align="center">No-cut video of gear insertion deployment, round 3 (10 trials)</h2>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <iframe  width="780" height="437.84" 
+     src="https://www.youtube.com/embed/a_KU-FwcpcY?autoplay=1&mute=1&loop=1"
+     autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </td>
+  </tr>
+
+</tbody>
+</table>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">We visualize the human intervention distribution of the above task execution trials of Round 0 and Round 3 respectively. Our Round 3 needs very little human intervention and the robot can run autonomously most of the time. </p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+    <img src="./src/human_intv.png" style="width:100%;">
+  </td>
+  </tr>
+
+</tbody>
+</table>
+
+<br>
+<br>
+
+<hr>
+
+<h1 align="center">Baselines Performance Comparison</h1>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">We compare Ours and the IWR baseline performances, and show how Ours learns better quality policy and more effective self-correction behaviors on critical bottleneck states. We show both real-world tasks: Gear Insertion and Coffee Pod Packing.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 align="center"><strong>Gear Insertion</strong></h2>
+
+<h2 align="center">IWR can still be ineffective at bottleneck states</h2>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr>  <td align="center" valign="middle">
   <video muted autoplay loop controls width="100%">
-      <source src="./video/gear.mp4"  type="video/mp4">
+      <source src="./video/gear_comparison_iwr.mp4"  type="video/mp4">
   </video>
   </td>
   </tr>
@@ -266,28 +422,52 @@ Robot Learning on the Job: Human-in-the-Loop Manipulation and Learning During De
 </tbody>
 </table>
 
+
+<h2 align="center">Ours has better precision and self-adjustment</h2>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr>  <td align="center" valign="middle">
   <video muted autoplay loop controls width="100%">
-      <source src="./video/kcup.mp4"  type="video/mp4">
+      <source src="./video/gear_comparison_ours.mp4"  type="video/mp4">
   </video>
   </td>
   </tr>
 
 </tbody>
 </table>
+
+<br>
+
+<h2 align="center"><strong>Coffee Pod Packing</strong></h2>
+
+<h2 align="center">IWR makes mistakes that it cannot correct</h2>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr>  <td align="center" valign="middle">
   <video muted autoplay loop controls width="100%">
-      <source src="./video/toolhang1.mp4"  type="video/mp4">
+      <source src="./video/kcup_comparison_iwr.mp4"  type="video/mp4">
+  </video>
+  </td>
+  </tr>
+</tbody>
+</table>
+
+<h2 align="center">Ours learns better self-correction behaviors</h2>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+  <video muted autoplay loop controls width="100%">
+      <source src="./video/kcup_comparison_ours.mp4"  type="video/mp4">
   </video>
   </td>
   </tr>
 
 </tbody>
 </table>
+
+<br>
+<hr>
+<br>
 
 <table align=center width=800px>
               <tr>
@@ -299,12 +479,7 @@ TODO
 </code></pre>
 </left></td></tr></table>
 
-<!-- <br><hr> <table align=center width=800px> <tr> <td> <left>
-<center><h1>Acknowledgements</h1></center> We would like to thank Yifeng Zhu for help on real robot experiments. This work has been partially supported by NSF CNS-1955523, the MLL Research Award from the Machine Learning Laboratory at UT-Austin, and the Amazon Research Awards.
- -->
 
-<!-- </left></td></tr></table>
-<br><br> -->
 
 <div style="display:none">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -316,4 +491,4 @@ TODO
 
   gtag('config', 'G-PPXN40YS69');
 </script>
-<!-- </center></div></body></div> -->
+
