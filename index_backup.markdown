@@ -322,9 +322,11 @@ As the autonomous policy improves over long-term deployment, the amount of human
 </tbody>
 </table>
 
+<br>
+
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr>  <td align="center" valign="middle">
-    <img src="./src/results_plot_tasks.png" style="width:100%;">
+    <img src="./src/result_22.png" style="width:85%;">
   </td>
   </tr>
 
@@ -398,7 +400,7 @@ For the initial and final deployment stages (Round 0 and Round 3), we show a no-
 
 <hr>
 
-<h1 align="center">Baselines Performance Comparison</h1>
+<h1 align="center">Qualitative Performance Comparisons</h1>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
