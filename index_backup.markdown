@@ -6,7 +6,7 @@ categories: projects
 
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>HITL Website Draft</title>
+<title>Robot Learning on the Job</title>
 
 
 <!-- <meta property="og:image" content="images/teaser_fb.jpg"> -->
