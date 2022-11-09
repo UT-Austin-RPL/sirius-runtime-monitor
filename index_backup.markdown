@@ -184,7 +184,7 @@ Data from deployments will be used by our algorithm to improve the robot’s pol
   <tbody>
   <tr>
     <td align="center" valign="middle">
-      <video muted autoplay controls width="100%">
+      <video muted autoplay loop controls width="100%">
         <source src="./video/1_overview1.mp4"  type="video/mp4">
       </video>
     </td>
