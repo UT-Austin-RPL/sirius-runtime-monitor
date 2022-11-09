@@ -184,7 +184,7 @@ Data from deployments will be used by our algorithm to improve the robot’s pol
   <tbody>
   <tr>
     <td align="center" valign="middle">
-      <video muted autoplay loop width="100%">
+      <video muted autoplay control width="100%">
         <source src="./video/1_overview1.mp4"  type="video/mp4">
       </video>
     </td>
@@ -211,7 +211,7 @@ deployment data are passed to policy training, while a newly trained policy is d
   <tbody>
   <tr>
     <td align="center" valign="middle">
-      <video muted autoplay loop width="100%">
+      <video muted autoplay loop control width="100%">
         <source src="./video/2_cicd.mp4"  type="video/mp4">
       </video>
     </td>
