@@ -154,7 +154,7 @@ Robot Learning on the Job: <br> Human-in-the-Loop Manipulation and Learning Duri
                 <tr>
                     <td>
 <p align="justify" width="20%">
- With the rapid growth of computing powers and recent advances in deep learning, we have witnessed impressive demonstrations of novel robot capabilities in research settings. Nonetheless, these learning systems exhibit brittle generalization and require excessive training data for practical tasks. To harness the capabilities of state-of-the-art robot learning models, while embracing their imperfections, we develop a principled framework for humans and robots to collaborate through a division of work. In this framework, partially autonomous robots are tasked with handling a major portion of decision-making where they work reliably; meanwhile, human operators monitor the process and intervene in challenging situations. Such a human-robot team ensures safe deployments in complex tasks. Further, we introduce a new learning algorithm to improve the policy's performance on the data collected from the task executions. The core idea is re-weighing training samples with approximated human trust and optimizing the policies with weighted behavioral cloning. We evaluate our framework in simulation and on real hardware, showing that our method consistently outperforms baselines over a collection of contact-rich manipulation tasks, achieving 8% boost in simulation and 27% on real hardware than the state-of-the-art methods, with 3 times faster convergence and 15% memory size.
+With the rapid growth of computing powers and recent advances in deep learning, we have witnessed impressive demonstrations of novel robot capabilities in research settings. Nonetheless, these learning systems exhibit brittle generalization and require excessive training data for practical tasks. To harness the capabilities of state-of-the-art robot learning models while embracing their imperfections, we present <strong>Sirius</strong>, a principled framework for humans and robots to collaborate through a division of work. In this framework, partially autonomous robots are tasked with handling a major portion of decision-making where they work reliably; meanwhile, human operators monitor the process and intervene in challenging situations. Such a human-robot team ensures safe deployments in complex tasks. Further, we introduce a new learning algorithm to improve the policy's performance on the data collected from the task executions. The core idea is re-weighing training samples with approximated human trust and optimizing the policies with weighted behavioral cloning. We evaluate <strong>Sirius</strong> in simulation and on real hardware, showing that <strong>Sirius</strong> consistently outperforms baselines over a collection of contact-rich manipulation tasks, achieving 8% boost in simulation and 27% on real hardware than the state-of-the-art methods, with 3 times faster convergence and 15% memory size.
 </p></td></tr></table>
 </p>
   </div>
@@ -162,13 +162,13 @@ Robot Learning on the Job: <br> Human-in-the-Loop Manipulation and Learning Duri
 <br>
 <hr>
 
-<h1 align="center">Overview</h1>
+<h1 align="center">Sirius: Overview</h1>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
   <p align="justify" width="20%">
 
-Our framework enables a human and a robot to collaborate on manipulation tasks through shared control. 
+Sirius enables a human and a robot to collaborate on manipulation tasks through shared control. 
 The human monitors the robot’s autonomous execution and intervenes to provide corrections through teleoperation. 
 Data from deployments will be used by our algorithm to improve the robot’s policy in consecutive rounds of policy learning.
 
@@ -340,7 +340,7 @@ As the autonomous policy improves over long-term deployment, the amount of human
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
-  <p align="justify" width="20%">We showcase qualitatively the human-in-the-loop deployment performances in initial and later stages of the deployment. The dynamics of human-robot partnership changes as deployment continues, with considerable less human workload. <br> <br> 
+  <p align="justify" width="20%">We showcase qualitatively the human-in-the-loop deployment performances in initial and later stages of the deployment in Sirius. The dynamics of human-robot partnership changes as deployment continues, with considerable less human workload. <br> <br> 
 
 For the initial and final deployment stages (Round 0 and Round 3), we show a no-cut video of 10 consecutive task executions to give a truthful qualitative demonstration of the policy performance and human-robot partnership. Human intervenes when the robot fails to make task progress. Green video filter indicates the duration when human intervenes. </p>
 </td>
