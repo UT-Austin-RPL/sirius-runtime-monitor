@@ -121,7 +121,7 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
 <div id="primarycontent">
 <center>
 <h1><strong>
-Robot Learning on the Job: <br> Human-in-the-Loop Manipulation and Learning During Deployment
+Robot Learning on the Job: <br> Human-in-the-Loop Autonomy and Learning During Deployment
 </strong></h1></center>
 <center><h2>
     &nbsp;&nbsp;&nbsp;<a href="https://huihanl.github.io/">Huihan Liu</a>&nbsp;&nbsp;
