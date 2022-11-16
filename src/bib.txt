@@ -1,1 +1,8 @@
-TODO
+@misc{liu2022robot,
+      title={Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment}, 
+      author={Huihan Liu and Soroush Nasiriany and Lance Zhang and Zhiyao Bao and Yuke Zhu},
+      year={2022},
+      eprint={2211.08416},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}

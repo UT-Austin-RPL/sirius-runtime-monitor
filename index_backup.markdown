@@ -476,8 +476,14 @@ For the initial and final deployment stages (Round 0 and Round 3), we show a no-
               <tr>
                   <td>
                   <left>
-<pre><code style="display:block; overflow-x: auto">@inproceedings{
-TODO
+<pre><code style="display:block; overflow-x: auto">
+@misc{liu2022robot,
+      title={Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment}, 
+      author={Huihan Liu and Soroush Nasiriany and Lance Zhang and Zhiyao Bao and Yuke Zhu},
+      year={2022},
+      eprint={2211.08416},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
 }
 </code></pre>
 </left></td></tr></table>
