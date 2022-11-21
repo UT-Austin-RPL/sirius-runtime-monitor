@@ -181,7 +181,7 @@ Data from deployments will be used by our algorithm to improve the robot’s pol
   <tbody>
   <tr>
     <td align="center" valign="middle">
-      <video muted autoplay loop controls width="100%">
+      <video muted autoplay controls width="100%">
         <source src="./video/1_overview1.mp4"  type="video/mp4">
       </video>
     </td>
@@ -208,7 +208,7 @@ deployment data are passed to policy training, while a newly trained policy is d
   <tbody>
   <tr>
     <td align="center" valign="middle">
-      <video muted autoplay loop controls width="100%">
+      <video muted autoplay controls width="100%">
         <source src="./video/2_cicd.mp4"  type="video/mp4">
       </video>
     </td>
@@ -240,7 +240,7 @@ Based off weighted behavior cloning, our method explicitly leverages the human-i
   <tbody>
   <tr>
     <td align="center" valign="middle">
-      <video muted autoplay controls loop width="100%" frameborder="5">
+      <video muted autoplay controls width="100%" frameborder="5">
         <source src="./video/model_new.mp4"  type="video/mp4">
       </video>
     </td>
@@ -275,7 +275,7 @@ After applying memory management strategies, the dataset is smaller, and importa
   <tbody>
   <tr>
     <td align="center" valign="middle">
-      <video muted autoplay controls loop width="100%" frameborder="5">
+      <video muted autoplay controls width="100%" frameborder="5">
         <source src="./video/memory.mp4"  type="video/mp4">
       </video>
     </td>
@@ -297,7 +297,7 @@ After applying memory management strategies, the dataset is smaller, and importa
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr>  <td align="center" valign="middle">
-  <video muted loop autoplay width="100%">
+  <video muted autoplay width="100%">
       <source src="./video/task_new.mp4"  type="video/mp4">
   </video>
   </td>
