@@ -185,6 +185,7 @@ We introduce a model-based runtime monitoring algorithm that continuously learns
   </tbody>
 </table>
 
+<br>
 <hr>
 
 <h1 align="center">Runtime Monitoring in Operation</h1>
@@ -213,7 +214,7 @@ We consider a human-in-the-loop learning and deployment framework, where a robot
   </tbody>
 </table>
 
-
+<br>
 <hr>
 
 <h1 align="center">Model Architecture</h1>
@@ -240,7 +241,7 @@ We train a dynamics model, a conditional Variational Autoencoder (cVAE), to pred
   </tbody>
 </table>
 
-
+<br>
 <hr>
 
 <h1 align="center">OOD Detection and Failure Detection</h1>
@@ -272,7 +273,6 @@ We also train a failure classifier that predicts whether a future state leads to
 
 
 <br>
-
 <hr>
 
 
@@ -317,9 +317,6 @@ We evalaute on <strong>Nut Assembly</strong> and <strong>Threading</strong> in s
 </table>
 
 <br>
-
-
-<hr>
 
 
 <h2 align="center">System Performance</h2>
@@ -370,16 +367,44 @@ We evalaute on <strong>Nut Assembly</strong> and <strong>Threading</strong> in s
 </tbody>
 </table>
 
-<hr>
+<br>
 
 
+
+
+<h2 align="center">Unit Testing Error Predictors</h2>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+
+<strong>Unit Testing Error Predictors.</strong> Our method outperforms other baselines in the two metrics. Better IOU performance indicates higher overlap between detected and human-labeled failures, and lower DCI means that our method's failure events are closer to the true human failure labeling.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+    <img src="./src/unit_testing.png" style="width:85%;">
+  </td>
+  </tr>
+
+</tbody>
+</table>
+
+<br>
+<!-- 
 <table align=center width=800px>
               <tr>
                   <td>
                   <left>
 <pre><code style="display:block; overflow-x: auto">
 </code></pre>
-</left></td></tr></table>
+</left></td></tr></table> -->
 
 
 
