@@ -263,7 +263,7 @@ We also train a failure classifier that predicts whether a future state leads to
   <tr>
     <td align="center" valign="middle">
       <video muted autoplay controls loop width="100%">
-        <source src="./video/momo_detection.mp4"  type="video/mp4">
+        <source src="./video/momo_detection_new.mp4"  type="video/mp4">
       </video>
     </td>
   </tr>
