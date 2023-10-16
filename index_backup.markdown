@@ -206,7 +206,7 @@ We consider a human-in-the-loop learning and deployment framework, where a robot
   <tr>
     <td align="center" valign="middle">
       <video muted autoplay controls loop width="100%">
-        <source src="./video/MoMo_demo.mp4"  type="video/mp4">
+        <source src="./video/MoMo_demo_new.mp4"  type="video/mp4">
       </video>
     </td>
   </tr>
