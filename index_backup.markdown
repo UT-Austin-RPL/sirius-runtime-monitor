@@ -407,6 +407,64 @@ We evalaute on <strong>Nut Assembly</strong> and <strong>Threading</strong> in s
 </left></td></tr></table> -->
 
 
+<h2 align="center">Ablations</h2>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+
+We draw samples from the stochastic latent space of the cVAE model, generating multiple predictions of future states. We evaluate each future independently and then average the error predictor results. Compared with predicting one deterministic future, our method is more robust to prediction noise and produces more temporally-consistent predictions. 
+<br>
+Below we show that predicting many futures help to stabilize results and reduce variance in prediction. In a unit testing setting, the orange line represents human intervention region (1 - intervention, 0 - normal), and the blue line represent predicted failure probability by our method. The predicted failure regions are noisy when the number of futures used is small (eg. 1, 10) but exhibit a higher degree of temporal consistency when using a larger number of futures (eg. 100, 200). 
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="center" width="20%">
+Ablation of Number of Future Predictions: Square
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+    <img src="./src/ablation_square_two_n_futures.png" style="width:100%;">
+  </td>
+  </tr>
+
+</tbody>
+</table>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="center" width="20%">
+Ablation of Number of Future Predictions: Threading
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+    <img src="./src/ablation_threading_two_n_future.png" style="width:100%;">
+  </td>
+  </tr>
+
+</tbody>
+</table>
+
+<br>
 
 <div style="display:none">
 <!-- Global site tag (gtag.js) - Google Analytics -->
