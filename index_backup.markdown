@@ -120,8 +120,8 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
 
 <div id="primarycontent">
 <center>
-<h1><strong>
-Model-Based Runtime Monitoring with Interactive Imitation Learning
+<h1 style="font-size: 42px;"><strong>
+Model-Based Runtime Monitoring <br> with Interactive Imitation Learning
 </strong></h1></center>
 <center><h2>
     &nbsp;&nbsp;&nbsp;<a href="https://huihanl.github.io/">Huihan Liu</a>&nbsp;&nbsp;
