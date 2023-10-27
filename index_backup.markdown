@@ -426,7 +426,7 @@ Below we show that predicting many futures help to stabilize results and reduce 
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
-  <p align="center" width="20%">
+  <p align="center" style="font-size: 22px;" width="20%">
 Ablation of Number of Future Predictions: Square
 </p>
 </td>
@@ -435,19 +435,28 @@ Ablation of Number of Future Predictions: Square
 </table>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
-  <tbody><tr>  <td align="center" valign="middle">
-    <img src="./src/ablation_square_two_n_futures.png" style="width:100%;">
-  </td>
-  </tr>
-
-</tbody>
+  <tbody>
+    <tr>
+      <!-- First Image -->
+      <td align="center" valign="top">
+        <img src="./src/square_demo_102.png" width="400px">
+        <p><br>Example 1</p>
+      </td>
+      <!-- Second Image -->
+      <td align="center" valign="top">
+        <img src="./src/square_demo_103.png" width="400px">
+        <p><br>Example 2</p>
+      </td>
+    </tr>
+  </tbody>
 </table>
+
 
 <br>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
-  <p align="center" width="20%">
+  <p align="center" style="font-size: 22px;" width="20%">
 Ablation of Number of Future Predictions: Threading
 </p>
 </td>
@@ -456,15 +465,41 @@ Ablation of Number of Future Predictions: Threading
 </table>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
-  <tbody><tr>  <td align="center" valign="middle">
-    <img src="./src/ablation_threading_two_n_future.png" style="width:100%;">
-  </td>
-  </tr>
-
-</tbody>
+  <tbody>
+    <tr>
+      <!-- First Image -->
+      <td align="center" valign="top">
+        <img src="./src/threading_demo_0.png" width="400px">
+        <p><br>Example 1</p>
+      </td>
+      <!-- Second Image -->
+      <td align="center" valign="top">
+        <img src="./src/threading_demo_5.png" width="400px">
+        <p><br>Example 2</p>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 <br>
+<hr>
+
+<h1 align="center">Citation</h1>
+
+<table align=center width=800px>
+              <tr>
+                  <td>
+                  <left>
+<pre><code style="display:block; overflow-x: auto">@misc{liu2023modelbased,
+      title={Model-Based Runtime Monitoring with Interactive Imitation Learning}, 
+      author={Huihan Liu and Shivin Dass and Roberto Martín-Martín and Yuke Zhu},
+      year={2023},
+      eprint={2310.17552},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+</code></pre>
+</left></td></tr></table>
 
 <div style="display:none">
 <!-- Global site tag (gtag.js) - Google Analytics -->
