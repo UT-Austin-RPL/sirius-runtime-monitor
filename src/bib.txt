@@ -1,9 +1,6 @@
-@misc{liu2023modelbased,
-      title={Model-Based Runtime Monitoring with Interactive Imitation Learning}, 
+@inproceedings{liu2023modelbased,
+      title={Model-Based Runtime Monitoring with Interactive Imitation Learning},
       author={Huihan Liu and Shivin Dass and Roberto Martín-Martín and Yuke Zhu},
-      year={2023},
-      eprint={2310.17552},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
-}
-</code></pre>
+      booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+      year={2024}
+    }
