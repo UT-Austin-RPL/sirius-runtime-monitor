@@ -490,14 +490,12 @@ Ablation of Number of Future Predictions: Threading
               <tr>
                   <td>
                   <left>
-<pre><code style="display:block; overflow-x: auto">@misc{liu2023modelbased,
-      title={Model-Based Runtime Monitoring with Interactive Imitation Learning}, 
+<pre><code style="display:block; overflow-x: auto">@inproceedings{liu2023modelbased,
+      title={Model-Based Runtime Monitoring with Interactive Imitation Learning},
       author={Huihan Liu and Shivin Dass and Roberto Martín-Martín and Yuke Zhu},
-      year={2023},
-      eprint={2310.17552},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
-}
+      booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+      year={2024}
+    }
 </code></pre>
 </left></td></tr></table>
 
