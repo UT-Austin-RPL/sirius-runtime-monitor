@@ -134,7 +134,7 @@ Model-Based Runtime Monitoring <br> with Interactive Imitation Learning
     </h2></center>
 
     <center><h2>
-        IEEE International Conference on Robotics and Automation (ICRA), 2024&nbsp;&nbsp;&nbsp; 		
+        <a> IEEE International Conference on Robotics and Automation (ICRA), 2024</a>&nbsp;&nbsp;&nbsp; 		
     </h2></center>
     
 	<center><h2><a href="https://arxiv.org/abs/2310.17552"><span class="icon">
